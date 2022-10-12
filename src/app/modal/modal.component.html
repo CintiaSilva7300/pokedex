@@ -1,0 +1,79 @@
+<nav class="navbar bg-light">
+  <div class="inputPesquisadiv">
+    <input class=" inputPesquisa" type="text" placeholder="busca..." (ngModelChange)="filtrarNome()"
+      [(ngModel)]="termoPesquisa">
+    <img class="imgPesquisa" src="https://cdn-icons-png.flaticon.com/512/3991/3991270.png" alt="pesquisar">
+  </div>
+  <!-- <p class="nomeAvatar"><strong >Cintia Silva</strong></p> -->
+  <div class="avatar">
+    <img class="imgAvatar" src="https://via.placeholder.com/50x50" alt="imgAvatar">
+  </div>
+</nav>
+
+<h2 class="texto">Pesquisar pokemons</h2>
+
+<div class="container col-12">
+  <div *ngFor="let poke of pokemons" class="cartao">
+    <img class="card-img-top" [src]="poke.url" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{poke.nome}}</h5>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+  <div class="w3-container">
+    <h2>W3.CSS Modal</h2>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open
+      Modal</button>
+
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+          <p>Some text. Some text. Some text.</p>
+          <img src="https://via.placeholder.com/500x300" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<P>--------------</P>
+<br> -->
+
+<!-- <div class="container" *ngFor="let poke of pokemons">
+  <div class="card" style="width: 18rem; height: 300px;">
+    <img [src]="poke.url" style="cursor:zoom-in" onclick="document.getElementById('id').style.display='block'">
+
+    <div id="id" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img [src]="poke.url" style="width:100%; height: 350px;">
+      </div>
+    </div>
+    <div class="card-body">
+      <p>{{poke.nome}}</p>
+    </div>
+  </div>
+</div> -->

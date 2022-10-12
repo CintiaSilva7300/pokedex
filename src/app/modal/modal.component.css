@@ -1,0 +1,58 @@
+.cartao {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 14rem;
+}
+
+.w3-modal{
+  display: flex;
+  display: inline;
+}
+
+.card-img-top {
+  height: 150px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.imgPesquisa{
+  height: 35px;
+  width: 35px ;
+  padding: 5px;
+
+}
+
+.inputPesquisadiv {
+  margin-left: 50px;
+}
+
+.inputPesquisa {
+  margin-left:30px;
+  padding: 5;
+  margin-top: 5px;
+}
+
+.texto {
+  text-align: center;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.avatar {
+  display: block;
+  color: rgb(5, 5, 5);
+  margin: 0px;
+}
+
+.imgAvatar {
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.nomeAvatar {
+  /* background-color: red; */
+}
